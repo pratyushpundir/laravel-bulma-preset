@@ -1,0 +1,47 @@
+// // Body
+// $body-bg: #f8fafc;
+
+// // Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-serif: "Roboto Slab", serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+// // Colors
+$pink: #e41f7b;
+$yellow: #F6BD4D;
+$green: #38c172;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-serif !important;
+}
+
+
+// Bulma Variables
+$primary: $pink;
+$primary-invert: white;
+$info: $yellow;
+$info-invert: black;
+$success: $green;
+$success-invert: white;
+$warning: $yellow;
+$warning-invert: #363636;
+$danger: $pink;
+$danger-invert: white;
+$dark: #363636;
+$dark-invert: white;
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "dark": ($dark, $dark-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;

@@ -1,0 +1,63 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:500,500i,700,700i|Roboto+Slab:400,700');
+
+// Variables
+@import 'variables';
+
+@import "~bulma";
+
+#app, .content, body, html {
+    overflow-y: auto !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-family: $font-family-serif;
+}
+
+#env-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 3px;
+    z-index: 100;
+}
+
+#env-indicator.local {
+    background-color: $blue;
+}
+
+#env-indicator.staging,
+#env-indicator.dev {
+    background-color: $pink;
+}
+
+#env-indicator.production {
+    display: none !important;
+}
+
+#version-badge {
+    font-size: 0.20em !important;
+}
+
+.links a {
+    display: inline-block;
+    margin: auto 1em;
+}
+
+// Scrollbars
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+    z-index: 1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e41f7b;
+    background-image: linear-gradient(0deg, #c40c81 0%, #e41f7b 71%, #ec3069 100%);
+    z-index: 2;
+}
+

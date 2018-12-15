@@ -1,0 +1,25 @@
+{
+    "name": "pratyushpundir/bulma-preset",
+    "description": "Use Bulma instead of Bootstrap along with versioned asset files.",
+    "license": "MIT",
+    "keywords": ["laravel", "laravel presets", "bulma", "laravel bulma"],
+    "authors": [
+        {
+            "name": "pratyushpundir",
+            "email": "pratyushpundir@icloud.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "PratyushPundir\\LaravelBulmaPreset": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PratyushPundir\\LaravelBulmaPreset\\BulmaServiceProvider"
+            ]
+        }
+    }
+}
