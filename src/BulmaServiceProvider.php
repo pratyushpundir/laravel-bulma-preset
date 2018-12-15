@@ -14,8 +14,8 @@ class BulmaServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        PresetCommand::macro('bulma', function () {
-            Preset::install();
+        PresetCommand::macro('bulma', function ($command) {
+            Preset::install($command);
         });
     }
 }

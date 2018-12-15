@@ -7,13 +7,21 @@ use Illuminate\Support\Arr;
 
 class Preset extends LaravelPreset
 {
-    public static function install()
+    public static function install($command)
     {
-        static::updatePackages();
-        static::updateScripts();
-        static::updateScripts();
-        static::updateStyles();
-        static::updateBladeViews();
+        try {
+            static::updatePackages();
+            static::updateScripts();
+            static::updateScripts();
+            static::updateStyles();
+            static::updateBladeViews();
+
+            $command->info('Scaffolding completed...');
+            $command->info('You are ready to build something awesome!');
+        } catch (\Exception $exception) {
+            $command->error('Whooops... Something went wrong!!!');
+            return $exception;
+        }
     }
 
     public static function updatePackageArray($defaultPackages)
