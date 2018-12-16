@@ -12,7 +12,7 @@ class Preset extends LaravelPreset
     {
         try {
             static::updatePackages();
-            static::updateScripts();
+            static::updateMix();
             static::updateScripts();
             static::updateStyles();
             static::updateBladeViews();
