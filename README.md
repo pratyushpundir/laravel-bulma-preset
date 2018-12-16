@@ -2,6 +2,10 @@
 
 This preset switches out [Bootstrap](https://getbootstrap.com/) with the awesome [Bulma](https://bulma.io/). In it's own words:
  > Bulma is a free, open source CSS framework based on Flexbox and used by more than 100,000 developers.
+
+<p align="center">
+  <img src="https://i.ibb.co/5ncp5fG/Screenshot-2018-12-16-at-2-56-27-PM.png" alt="Screenshot-2018-12-16-at-2-56-27-PM" border="0">
+</p>
  
 ### What it does
  - Removes ````bootstrap```` in favor of ````bulma````.
