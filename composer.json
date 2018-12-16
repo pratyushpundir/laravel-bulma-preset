@@ -1,5 +1,5 @@
 {
-    "name": "pratyushpundir/bulma-preset",
+    "name": "pratyushpundir/laravel-bulma-preset",
     "description": "Use Bulma instead of Bootstrap along with versioned asset files.",
     "license": "MIT",
     "keywords": ["laravel", "laravel presets", "bulma", "laravel bulma"],
