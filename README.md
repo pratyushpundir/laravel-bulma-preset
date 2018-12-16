@@ -20,7 +20,7 @@ This preset switches out [Bootstrap](https://getbootstrap.com/) with the awesome
  This preset's Blade views are kept in it's own directory so nothing should go wrong on that front, but, for a non-fresh project, it ***will 100%*** squash any custom JS, SASS, Mix code you may have written). ___You have been warned!___
  
  - ````cd```` into your ***fresh*** Laravel project.
- - Run ````composer require pratyushpundir/bulma-preset````.
+ - Run ````composer require pratyushpundir/laravel-bulma-preset````.
  - Then run `````php artisan preset bulma`````. This will scaffold everything you need to replace Bootstrap with Bulma and set up your JS, SASS and Blade Views.
  - Install and compile your assets with ````yarn && yarn watch```` or ````npm install && npm run watch```` (but ```yarn``` is so much better!!!).
  - Visit ````routes/web.php```` and change the following piece of code:
