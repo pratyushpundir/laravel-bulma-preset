@@ -1,35 +1,28 @@
-// // Body
-// $body-bg: #f8fafc;
+// Primary Variables
+$orange: hsl(14, 100%, 53%);
+$yellow: hsl(48, 100%, 67%);
+$green: hsl(141, 71%, 48%);
+$turquoise: hsl(171, 100%, 41%);
+$cyan: hsl(204, 86%, 53%);
+$blue: hsl(217, 71%, 53%);
+$purple: hsl(271, 100%, 71%);
+$red: hsl(348, 100%, 61%);
 
-// // Typography
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-family-serif: "Roboto Slab", serif;
-$font-size-base: 1rem;
-$line-height-base: 1.6;
-
-// // Colors
-$pink: #e41f7b;
-$yellow: #F6BD4D;
-$green: #38c172;
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-family-serif !important;
-}
-
-
-// Bulma Variables
-$primary: $pink;
+// Derived Variables
+$primary: $turquoise;
 $primary-invert: white;
-$info: $yellow;
-$info-invert: black;
+$info: $cyan;
+$info-invert: white;
 $success: $green;
 $success-invert: white;
 $warning: $yellow;
-$warning-invert: #363636;
-$danger: $pink;
+$warning-invert: rgba(0, 0, 0, 0.7);
+$danger: $red;
 $danger-invert: white;
-$dark: #363636;
-$dark-invert: white;
+$dark: hsl(0, 0%, 21%);
+$dark-invert: hsl(0, 0%, 96%);
+$light: hsl(0, 0%, 96%);
+$light-invert: hsl(0, 0%, 21%);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
@@ -40,6 +33,16 @@ $colors: (
     "danger": ($danger, $danger-invert),
     "dark": ($dark, $dark-invert)
 );
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-serif: "Roboto Slab", serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-serif !important;
+}
 
 // Links
 $link: $primary;
