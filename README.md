@@ -55,7 +55,7 @@ You need to ensure 2 things happen for this to work:
 #### Configure the environment indicator
 This preset also adds an environment indicator to help you distinguish between various app environments your Laravel app can be in (local, dev, staging, production, etc.). It shows up as a thin colored bar at the very top of the page. The color of the bar indicates the app environment.
 
-This works by adding a class-name equal to a hyphenated form of the environment name you set in your ````.env```` file. You can then configure the colors you want your indicator to have in ````resources/sass/app.scss````. Hunt down the following piece of code:
+This works by adding a class-name equal to a hyphenated form of the environment name you set in your ````.env```` file. You can then configure the colors you want your indicator to have in ````resources/sass/app.scss````. Hunt down the following piece of code and change it as needed:
 ````scss
 // Configure environment-wise colors you need per environment
 #env-indicator.local {
@@ -72,8 +72,6 @@ This works by adding a class-name equal to a hyphenated form of the environment 
     display: none !important;
 }
 ````
-
-By default, 
  
 
 ### Author
