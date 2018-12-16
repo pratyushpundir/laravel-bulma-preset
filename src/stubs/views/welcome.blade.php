@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('bulma.layouts.app')
 
 @section('meta-tags')
     <!-- Your Meta Tags Here-->

@@ -4,6 +4,7 @@ namespace PratyushPundir\LaravelBulmaPreset;
 
 use Illuminate\Foundation\Console\Presets\Preset as LaravelPreset;
 use Illuminate\Support\Arr;
+use File;
 
 class Preset extends LaravelPreset
 {
@@ -17,7 +18,12 @@ class Preset extends LaravelPreset
             static::updateBladeViews();
 
             $command->info('Scaffolding completed...');
-            $command->info('You are ready to build something awesome!');
+
+            $command->info('JS Directory: resources/js');
+            $command->info('SASS Directory: resources/sass');
+            $command->info('Blade View Directory: resources/bulma/views');
+
+            $command->info('You are ready. Build something awesome!');
         } catch (\Exception $exception) {
             $command->error('Whooops... Something went wrong!!!');
             return $exception;
@@ -59,12 +65,17 @@ class Preset extends LaravelPreset
 
     public static function updateBladeViews()
     {
-//        File::cleanDirectory(resource_path('views'));
-//        File::makeDirectory(resource_path('views/layouts'));
-//        File::makeDirectory(resource_path('views/shared'));
+        if (! File::isDirectory(resource_path('views/bulma'))) {
+            File::makeDirectory(resource_path('views/bulma'));
+        } else {
+            File::cleanDirectory(resource_path('views/bulma'));
+        }
 
-        copy(__DIR__ . '/stubs/views/layouts/app.blade.php', resource_path('views/layouts/app.blade.php'));
-        copy(__DIR__ . '/stubs/views/shared/bulma-nav.blade.php', resource_path('views/shared/bulma-nav.blade.php'));
-        copy(__DIR__ . '/stubs/views/welcome.blade.php', resource_path('views/welcome.blade.php'));
+        File::makeDirectory(resource_path('views/bulma/layouts'));
+        File::makeDirectory(resource_path('views/bulma/shared'));
+
+        copy(__DIR__ . '/stubs/views/layouts/app.blade.php', resource_path('views/bulma/layouts/app.blade.php'));
+        copy(__DIR__ . '/stubs/views/shared/bulma-nav.blade.php', resource_path('views/bulma/shared/bulma-nav.blade.php'));
+        copy(__DIR__ . '/stubs/views/welcome.blade.php', resource_path('views/bulma/welcome.blade.php'));
     }
 }
