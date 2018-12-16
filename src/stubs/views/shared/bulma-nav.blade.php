@@ -53,10 +53,10 @@
             <div class="navbar-item">
                 <div class="buttons">
                     <a class="button is-primary is-small">
-                        <strong>Sign Up</strong>
+                        <strong>Sign up</strong>
                     </a>
                     <a class="button is-default is-small">
-                        <strong>Log In</strong>
+                        <strong>Log in</strong>
                     </a>
                 </div>
             </div>
