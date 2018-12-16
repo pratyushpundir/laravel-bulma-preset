@@ -27,15 +27,17 @@
 }
 
 #env-indicator.local {
-    background-color: $blue;
+    background-color: $primary;
 }
 
+//#env-indicator.staging,
+//#env-indicator.dev {
+//    background-color: $light;
+//}
+
+#env-indicator.production,
 #env-indicator.staging,
 #env-indicator.dev {
-    background-color: $pink;
-}
-
-#env-indicator.production {
     display: none !important;
 }
 
