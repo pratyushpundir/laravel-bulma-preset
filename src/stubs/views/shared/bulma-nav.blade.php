@@ -28,22 +28,22 @@
 
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
-                    Dropdown
+                    Links
                 </a>
 
                 <div class="navbar-dropdown">
                     <a class="navbar-item is-active">
-                        Option 1
+                        Active Link
                     </a>
-                    <a class="navbar-item is-active">
-                        Option 2
+                    <a class="navbar-item">
+                        Link 2
                     </a>
-                    <a class="navbar-item is-active">
-                        Option 3
+                    <a class="navbar-item">
+                        Link 3
                     </a>
                     <hr class="navbar-divider">
                     <a class="navbar-item">
-                        Option 4
+                        Some Option
                     </a>
                 </div>
             </div>
@@ -53,10 +53,10 @@
             <div class="navbar-item">
                 <div class="buttons">
                     <a class="button is-primary is-small">
-                        <strong>Some Action</strong>
+                        <strong>Sign Up</strong>
                     </a>
                     <a class="button is-default is-small">
-                        <strong>Another Action</strong>
+                        <strong>Log In</strong>
                     </a>
                 </div>
             </div>
