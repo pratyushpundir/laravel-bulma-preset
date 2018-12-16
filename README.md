@@ -4,7 +4,7 @@ This preset switches out [Bootstrap](https://getbootstrap.com/) with the awesome
  > Bulma is a free, open source CSS framework based on Flexbox and used by more than 100,000 developers.
 
 <p align="center">
-  <img src="https://i.ibb.co/5ncp5fG/Screenshot-2018-12-16-at-2-56-27-PM.png" alt="Screenshot-2018-12-16-at-2-56-27-PM" border="0">
+  <img width="1080" src="https://i.ibb.co/P4nkwgz/Screenshot-2018-12-16-at-3-06-07-PM.png" alt="Screenshot-2018-12-16-at-3-06-07-PM" border="0">
 </p>
  
 ### What it does
