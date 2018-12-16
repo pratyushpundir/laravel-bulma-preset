@@ -25,7 +25,7 @@
         @yield('content')
     </main>
 
-    <div id="env-indicator" class="{{ env('APP_ENV') }}"></div>
+    <div id="env-indicator" class="{{ kebab_case(env('APP_ENV')) }}"></div>
 </div>
 
 <!-- Scripts -->

@@ -48,10 +48,33 @@ You need to ensure 2 things happen for this to work:
  1. SASS and JS assets need to be compiled using the the ````production```` settings. To do this, run ````yarn production```` or ````yarn prod````. You can use NPM too of course. But we talked about this! 
  2. Your Laravel app needs to be in ````production```` environment. Do this in your ````.env```` file.
 
-#### Enable the Version Number Badge in````bulma-nav.blade.php````
+#### Enable the Version Number Badge in ````bulma-nav.blade.php````
  1. Add ````'version' => env('APP_VERSION', '1.0.0'),```` to your ```config/app.php``` file.
  2. Add ````APP_VERSION=YOUR_VERSION_NUMBER```` to your ````.env```` file. Replace "YOUR_VERSION_NUMBER" with whatever you need.
 
+#### Configure the environment indicator
+This preset also adds an environment indicator to help you distinguish between various app environments your Laravel app can be in (local, dev, staging, production, etc.). It shows up as a thin colored bar at the very top of the page. The color of the bar indicates the app environment.
+
+This works by adding a class-name equal to a hyphenated form of the environment name you set in your ````.env```` file. You can then configure the colors you want your indicator to have in ````resources/sass/app.scss````. Hunt down the following piece of code:
+````scss
+// Configure environment-wise colors you need per environment
+#env-indicator.local {
+    background-color: $primary;
+}
+
+#env-indicator.dev {
+    background-color: $primary-invert;
+}
+
+// Hide the environment indicator on your choice of environments
+#env-indicator.production,
+#env-indicator.staging {
+    display: none !important;
+}
+````
+
+By default, 
+ 
 
 ### Author
 Pratyush Pundir   

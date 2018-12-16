@@ -4,17 +4,21 @@
 // Variables
 @import 'variables';
 
+// Import Bulma
 @import "~bulma";
 
+// Setup for Custom Scrollbars
 #app, .content, body, html {
     overflow-y: auto !important;
 }
 
+// Navbar
 .navbar-brand {
     font-weight: 700;
     font-family: $font-family-serif;
 }
 
+// Environment Indicator
 #env-indicator {
     position: fixed;
     top: 0;
@@ -26,32 +30,33 @@
     z-index: 100;
 }
 
+// Configure environment-wise colors you need per environment
 #env-indicator.local {
     background-color: $primary;
 }
 
-//#env-indicator.staging,
-//#env-indicator.dev {
-//    background-color: $light;
-//}
-
-#env-indicator.production,
-#env-indicator.staging,
 #env-indicator.dev {
+    background-color: $primary-invert;
+}
+
+// Hide the environment indicator on your choice of environments
+#env-indicator.production,
+#env-indicator.staging {
     display: none !important;
 }
 
-// ADD A
+// Version Badge
 #version-badge {
     font-size: 0.20em !important;
 }
 
+// Links
 .links a {
     display: inline-block;
     margin: auto 1em;
 }
 
-// Scrollbars
+// Custom-Scrollbars
 ::-webkit-scrollbar {
     width: 6px;
     background-color: $light;
