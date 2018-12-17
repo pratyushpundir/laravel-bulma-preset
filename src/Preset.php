@@ -43,7 +43,6 @@ class Preset extends LaravelPreset
 
         $unwantedPackages = [
             'popper.js',
-            'jquery',
             'lodash'
         ];
 

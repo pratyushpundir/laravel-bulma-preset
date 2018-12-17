@@ -29,5 +29,14 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+
+    methods: {
+        toggleMobileMenu () {
+            /* eslint-disable */
+            $(".navbar-burger").toggleClass("is-active")
+            $(".navbar-menu").toggleClass("is-active")
+            /* eslint-enable */
+        }
+    }
 });
